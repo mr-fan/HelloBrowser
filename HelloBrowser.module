@@ -64,7 +64,7 @@ class Hellobrowser extends WireData implements Module {
 	public function init() {
 
 		// add a hook after each page is rendered and modify the output
-		$this->addHookAfter('Page::render', $this, 'example2'); 
+		$this->addHookAfter('Page::render', $this, 'browserupdate'); 
 
 	}
 
@@ -72,7 +72,7 @@ class Hellobrowser extends WireData implements Module {
 	 * hooks into every page after it's rendered and adds the browser-update.org snippet after the body tag
 	 *
 	 */
-	public function example2($event) {
+	public function browserupdate($event) {
 
 		$page = $event->object; 
 
