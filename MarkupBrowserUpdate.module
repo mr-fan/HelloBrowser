@@ -25,7 +25,7 @@ class MarkupBrowserUpdate extends WireData implements Module, ConfigurableModule
 			'href' => 'http://browser-update.org',
 			'singular' => true,
 			'autoload' => true,
-			'icon' => 'smile-o',
+			'icon' => 'globe',
 			);
 	}
 
