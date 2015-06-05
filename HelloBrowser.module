@@ -80,6 +80,6 @@ class Hellobrowser extends WireData implements Module {
 		if($page->template == 'admin') return;
 
 		// add a "Hello World" paragraph right before the closing body tag
-		$event->return = str_replace("</body>", "</body><script>var $buoop = {c:2}; function $buo_f(){var e = document.createElement("script"); e.src = "//browser-update.org/update.min.js"; document.body.appendChild(e); }; try {document.addEventListener("DOMContentLoaded", $buo_f,false)} catch(e){window.attachEvent("onload", $buo_f)} </script> ", $event->return); 
+		$event->return = str_replace('</body>', '</body><script>var $buoop = {c:2}; function $buo_f(){var e = document.createElement("script"); e.src = "//browser-update.org/update.min.js"; document.body.appendChild(e); }; try {document.addEventListener("DOMContentLoaded", $buo_f,false)} catch(e){window.attachEvent("onload", $buo_f)} </script> ', $event->return); 
 	}
 }
